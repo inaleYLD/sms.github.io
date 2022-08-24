@@ -1,0 +1,271 @@
+
+.box{
+    display: grid;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1.5fr 8.5fr;
+    grid-template-rows: 0.5fr 9.5fr;
+    grid-template-areas: "one two"
+                        "three two";
+}
+.box1{
+    grid-area: one;
+    background: #1b3955;
+    padding-top: 5%;
+    line-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.box1 p{
+    text-align: center;
+    font-size:17pt;
+    color:#ffffff;
+}
+.box2{
+    grid-area: two;
+    background: #ffffff;
+}
+.box21{
+    display:none;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: 3% 6% 91%;
+}
+.box211{
+    border-bottom: 2px solid #dfc7c796;
+    position: relative;
+}
+.box211 p{
+    font-size: 16pt;
+    text-align: center;
+    width: 100%;
+    color: #000000;
+    position: absolute;
+    bottom: 10%;
+}
+.box3{
+    grid-area: three;
+    background: #1b3955;
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: repeat(auto-fill,50px);
+}
+.box3 div{
+    line-height: 50px;
+}
+.box3 div p{
+    text-align: center;
+    font-size:16pt;
+    color:#ffffff;
+}
+.box3 div:hover{
+    background: #0099ff;
+}
+.stuinfor{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 70% 20%;
+}
+.stuinfor1{
+    margin-left: 5%;
+    display: grid;
+    width: 40%;
+    height: 100%;
+    line-height: 50%;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+.stuinfor1 input[type=button]{
+    text-align: center;
+    padding: 12px 20px;
+    width: 100%;
+    height: 50%;
+    margin: 20px 10%;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.stuinfor1 div:nth-child(1) input[type=button]{
+    border: 1px solid #51c11d;
+    background: #51c11d;
+}
+.stuinfor1 div:nth-child(3) input[type=button]{
+    border: 1px solid #0099ff;
+    background: #0099ff;
+}
+.stuinfor1 div:nth-child(1) input[type=button]:hover{
+    background: #6a9c43;
+}
+.stuinfor1 div:nth-child(3) input[type=button]:hover{
+    background: #4e88af;
+}
+.stuinfor1 input[type=text]{
+    height: 50%;
+    width: 90%;
+    padding: 12px 20px;
+    margin: 20px 7%;
+    box-sizing: border-box;
+    border: 1px solid #bfbebe;
+    background: #f7f7f796;
+    border-radius: 5px;
+}
+.stuinfor21{
+    margin-left:5.5%;
+    height: 100%;
+    width: 85%;
+}
+.stuinfor21 table{
+    width: 100%;
+}
+.stuinfor21 tr{
+
+    height: 3.75rem;
+    border: 1px solid #dfc7c796;
+}
+.stuinfor21 th{
+    background: #a7a2a2;
+    border: 1px solid #ededed;
+}
+.stuinfor21 td{
+    border: 1px solid #dfc7c796;
+}
+.stuinfor211{
+    display: grid;
+    width: 100%;
+    height: 3.75rem;
+    grid-template-columns: 1fr 1fr;
+}
+.stuinfor211 div{
+    position: relative;
+}
+.stuinfor211 div input[type=button]{
+    width: 60%;
+    height: 60%;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.stuinfor211 div:nth-child(1) input{
+    border: 1px solid #0099ff;
+    background: #0099ff;
+}
+.stuinfor211 div:nth-child(2) input{
+    border: 1px solid #ff0000;
+    background: #ff0000;
+}
+.stuinfor211 div:nth-child(1) input:hover{
+    border: 1px solid #0099ff;
+    background: #4e88af;
+}
+.stuinfor211 div:nth-child(2) input:hover{
+    border: 1px solid #ff0000;
+    background: #bf1515;
+}
+.stuinfor31{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 8fr 2fr;
+    grid-template-rows: auto;
+
+}
+.stuinfor31 div{
+    position: relative;
+}
+.stuinfor31 input[type=button]{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 50%;
+    height: 80%;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.stuinfor31 div:nth-child(1) input[type=button]{
+    border: 1px solid #51c11d;
+    background: #51c11d;
+}
+.stuinfor31 div:nth-child(2) h3{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.stuinfor31 div:nth-child(3) input[type=button]{
+    border: 1px solid #0099ff;
+    background: #0099ff;
+}
+.stuinfor31 div:nth-child(1) input[type=button]:hover{
+    background: #6a9c43;
+}
+.stuinfor31 div:nth-child(3) input[type=button]:hover{
+    background: #4e88af;
+}
+.box4{
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: rgba(99,99,99,0.8);
+    width: 100%;
+    height: 100%;
+}
+.box41{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:0.5fr 5fr 0.5fr 1fr 0.5fr;
+    position: relative;
+    top: 130px;
+    background: #fff;
+    width: 30%;
+    height: 50%;
+    border-radius: 10px;
+    margin: 5% auto;
+}
+.box41 input[type=text]{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 10px 10%;
+    box-sizing: border-box;
+    border: 2px solid #bfbebe;
+    background: #f7f7f796;
+    border-radius: 10px;
+}
+.but{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+.but input[type=button]{
+    text-align: center;
+    padding: 12px 20px;
+    width: 75%;
+    border: 0px;
+    font-weight: bolder;
+}
+.but div:nth-child(1) input{
+    background: #0099ff;
+    margin-left: 20%;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.but div:nth-child(2) input{
+    background: #efeded;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+
+.but div:nth-child(1) input:hover{
+    background: #4e88af;
+}
+.but div:nth-child(2) input:hover{
+    background: #c8c8c8;
+}

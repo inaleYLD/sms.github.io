@@ -1,0 +1,84 @@
+.box {
+    display: grid;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: 40% 60%;
+}
+.box1{
+    background:#0099ff;
+}
+.box2{
+    background:#f7f7f796;
+}
+.box21{
+    display: grid;
+    position:relative;
+    grid-template-columns: auto;
+    grid-template-rows: 15% 85%;
+    top: -35%;
+    left:35%;
+    background:#fff;
+    width: 30%;
+    height: 60%;
+}
+.box211{
+    background:#0099ff;
+
+
+}
+.box211 p{
+    text-align: center;
+    font-size:2em;
+    font-weight: bolder;
+    color:#ffffff;
+}
+.box212{
+    background:#fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px 0px #363030;
+}
+.box212 input[type=text],input[type=password]{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 10px 10%;
+    box-sizing: border-box;
+    border: 2px solid #bfbebe;
+    background: #f7f7f796;
+    border-radius: 10px;
+}
+.but{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+.but input[type=reset],input[type=button]{
+    text-align: center;
+    padding: 12px 20px;
+    width: 75%;
+    border: 0px;
+    font-weight: bolder;
+}
+.but input[type=button]{
+    background: #0099ff;
+    margin-left: 20%;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.but input[type=reset]{
+    background: #efeded;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+.box212 div{
+    margin-top: 6%;
+}
+.but input[type=button]:hover{
+    background: #4e88af;
+}
+.but input[type=reset]:hover{
+    background: #c8c8c8;
+}
